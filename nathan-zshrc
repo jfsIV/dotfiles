@@ -1,0 +1,71 @@
+# This is YCG Bon (Nathan Glaser's) zshell profile. I am keeping it here for safe keeping...
+
+###
+### OpenMC malarky
+###
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export CC=/opt/homebrew/opt/llvm/bin/clang
+export CXX=/opt/homebrew/opt/llvm/bin/clang++
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export HDF5_DIR=/opt/homebrew/opt/hdf5
+export HDF5_ROOT=/opt/homebrew/opt/hdf5
+export OPENMC_CROSS_SECTIONS=$HOME/cross_sections/endfb-vii.1-hdf5/cross_sections.xml
+
+###
+### History
+###
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt inc_append_history
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[[B' down-line-or-beginning-search
+
+###
+### Prompt
+###
+source ~/.git-prompt.sh
+setopt PROMPT_SUBST
+export PS1='%F{167}%n %F{63}%2~%F{34}$(__git_ps1)%f %F{255}\$%f '
+
+###
+### LS colors
+###
+export CLICOLOR=1
+export LSCOLORS='HxdxdxdxGxHxHxgxgxHxHx'
+
+###
+### Alias
+###
+alias jl='jupyter lab'
+alias ls='ls --color=auto'
+alias la='ls -A'
+alias ll='ls -l'
+alias l='ls'
+alias cardinal-opt='/Users/nglaser/projects/cardinal/cardinal-opt'
+alias cardinal-dbg='/Users/nglaser/projects/cardinal/cardinal-dbg'
+
+###
+### Conda malarky
+###
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/nglaser/miniforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/nglaser/miniforge/etc/profile.d/conda.sh" ]; then
+        . "/Users/nglaser/miniforge/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/nglaser/miniforge/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
