@@ -37,8 +37,8 @@ if [[ ! -d $VENV_COPY ]]; then
     echo "
 Entered venv copy \"$VENV_COPY\" is not recognized.
 Please enter a venv that already exists."
-ls -d */
-echo ""
+    ls -d */
+    echo ""
     return 1
 fi
 
