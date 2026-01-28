@@ -1,8 +1,8 @@
 RETURN_DIR=$PWD
 
-INSTALL_OPENMC="yes"
-DOWNLOAD_XS="no"
-XS_TO_BASHRC="yes"
+INSTALL_OPENMC="no"
+DOWNLOAD_XS="yes"
+XS_TO_BASHRC="no"
 
 # install
 if [[ $INSTALL_OPENMC == "yes" ]]; then

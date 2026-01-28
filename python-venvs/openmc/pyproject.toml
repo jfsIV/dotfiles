@@ -1,9 +1,11 @@
 [project]
-name = "openmc"
+name = "openmc-venv"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "endf>=0.1.9",
     "h5py>=3.15.1",
+    "ipython>=9.9.0",
     "jupyterlab>=4.5.2",
     "lxml>=6.0.2",
     "matplotlib>=3.10.8",
@@ -11,6 +13,7 @@ dependencies = [
     "pandas>=3.0.0",
     "pyqt5>=5.15.11",
     "scipy>=1.17.0",
+    "setuptools>=80.10.2",
     "uncertainties>=3.2.3",
     "vtk>=9.5.2",
 ]

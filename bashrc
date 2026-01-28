@@ -50,3 +50,6 @@ Please enter a venv that already exists.
 
     cd $RETURN_DIR
 }
+
+# OPENMC XS
+OPENMC_CROSS_SECTIONS=/home/jfs/.local/share/cross_sections//endfb-viii.1-hfd5/cross_section.xml
