@@ -18,3 +18,11 @@
           - test
 
 $ \mu = \int_{4\pi} d\vec{\Omega} \Psi $
+
+> [!Important]
+
+> [!Tip]
+
+> [!Warning]
+
+> [!Caution]

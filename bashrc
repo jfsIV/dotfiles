@@ -7,11 +7,13 @@
 
 alias ls='ls --color=auto'
 alias la='ls -lA'
+alias ll='ls -l'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # environment variables
 export CC=gcc
+export EDITOR=nvim
 
 # user alias
 alias vi=nvim
