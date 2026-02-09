@@ -28,14 +28,14 @@ done
 
 
 # if openmc path is in path, don't add it again
-if [[ $PATH == *"$OPENMC_DIR/build/bin"* ]]; then
+if [[ $PATH != *"$OPENMC_DIR/build/bin/"* ]]; then
     ACTIVATE_PATH=$VENV_NAME/bin/activate
 
     echo -e "\n
 # Adding the openmc bin to path when this venv is activated
 export PATH=$OPENMC_DIR/build/bin/:\$PATH" >> $ACTIVATE_PATH
 
-    . $VENV_NAME/bin/activate
+    . $ACTIVATE_PATH
 fi
 
 

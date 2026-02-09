@@ -19,6 +19,10 @@ export EDITOR=nvim
 alias vi=nvim
 alias grep=rg
 alias pm="sudo pacman"
+alias ssh="kitty +kitten ssh"
+
+# ssh addresses
+alias eos="ssh jfspecht@remote.eos.ncsu.edu"
 
 # launch yazi on startup
 #yazi
@@ -55,3 +59,5 @@ Please enter a venv that already exists.
 
 # OPENMC XS
 OPENMC_CROSS_SECTIONS=/home/jfs/.local/share/cross_sections//endfb-viii.1-hfd5/cross_section.xml
+
+#cd /home/jfs/courses/ne523-computational_transport_theory/code01
