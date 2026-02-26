@@ -6,3 +6,4 @@ ln -sf $REBUILD_DIR/bashrc ~/.bashrc
 
 ln -sfP $REBUILD_DIR/neovim-config ~/.config/nvim
 ln -sfP $REBUILD_DIR/hypr ~/.config/hypr
+ln -sfP $REBUILC_DIR/hyprpanel ~/.config/hyprpanel

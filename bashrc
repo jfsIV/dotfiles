@@ -20,6 +20,7 @@ alias vi=nvim
 alias grep=rg
 alias pm="sudo pacman"
 alias ssh="kitty +kitten ssh"
+alias jl=jupyter-lab
 
 # ssh addresses
 alias eos="ssh jfspecht@remote.eos.ncsu.edu"
@@ -29,7 +30,7 @@ alias eos="ssh jfspecht@remote.eos.ncsu.edu"
 
 # activate python base venv in new terminals
 VENV_DIR=~/projects/rebuild-computer/python-venvs
-. $VENV_DIR/base/base/bin/activate
+#. $VENV_DIR/base/base/bin/activate
 
 swapvenv () {
     local RETURN_DIR=$PWD
@@ -61,3 +62,5 @@ Please enter a venv that already exists.
 OPENMC_CROSS_SECTIONS=/home/jfs/.local/share/cross_sections//endfb-viii.1-hfd5/cross_section.xml
 
 #cd /home/jfs/courses/ne523-computational_transport_theory/code01
+#cd /home/jfs/projects/pebble_shielding/
+#swapvenv openmc

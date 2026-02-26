@@ -1,0 +1,155 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "menus.transition": "none",
+  "menus.transitionTime": 0,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "bluetooth",
+        "battery",
+        "systray",
+        "clock"
+      ]
+    },
+    "1": {
+      "left": [
+        "workspaces"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "workspaces"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.floating": false,
+  "menus.clock.time.military": true,
+  "menus.clock.time.hideSeconds": true,
+  "menus.clock.weather.location": "Raleigh",
+  "menus.clock.weather.unit": "imperial",
+  "bar.customModules.scrollSpeed": 3,
+  "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
+  "bar.customModules.netstat.label": true,
+  "theme.bar.buttons.modules.hyprsunset.enableBorder": false,
+  "menus.dashboard.directories.left.directory1.command": "bash -c \"xdg-open $HOME/downloads/\"",
+  "menus.dashboard.directories.left.directory2.command": "bash -c \"xdg-open $HOME/.user-dirs/videos/\"",
+  "menus.dashboard.directories.left.directory3.command": "bash -c \"xdg-open $HOME/projects/\"",
+  "menus.dashboard.directories.right.directory1.command": "bash -c \"xdg-open $HOME/documents/\"",
+  "menus.dashboard.directories.right.directory2.command": "bash -c \"xdg-open $HOME/pictures/\"",
+  "menus.dashboard.recording.path": "$HOME/.user-dirs/videos/Screencasts",
+  "theme.bar.menus.monochrome": true,
+  "theme.bar.menus.buttons.active": "#f5c2e6",
+  "theme.bar.transparent": false,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.showAllActive": true,
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "bar.workspaces.workspaceMask": true,
+  "bar.workspaces.workspaceIconMap": {
+    "1": {
+      "icon": "",
+      "color": "#0c85cc"
+    },
+    "2": {
+      "icon": "",
+      "color": "#447bce"
+    },
+    "3": {
+      "icon": "",
+      "color": "#676ec9"
+    },
+    "4": {
+      "icon": "",
+      "color": "#8360be"
+    },
+    "5": {
+      "icon": "",
+      "color": "#9a4fac"
+    },
+    "6": {
+      "icon": "",
+      "color": "#ab3c95"
+    },
+    "7": {
+      "icon": "",
+      "color": "#b62879"
+    },
+    "8": {
+      "icon": "",
+      "color": "#b9155b"
+    },
+    "9": {
+      "icon": "󱓦",
+      "color": "#b6113c"
+    },
+    "10": {
+      "icon": "󰇮",
+      "color": "#ab1f1b"
+    }
+  },
+  "bar.customModules.netstat.icon": "󰇧",
+  "bar.customModules.netstat.dynamicIcon": true,
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.bar.buttons.modules.submap.enableBorder": false,
+  "theme.bar.buttons.modules.power.enableBorder": false,
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "theme.bar.buttons.modules.weather.enableBorder": false,
+  "scalingPriority": "gdk",
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "menus.media.hideAuthor": false,
+  "menus.media.hideAlbum": false,
+  "menus.media.displayTime": false,
+  "menus.media.displayTimeTooltip": false,
+  "notifications.position": "top right",
+  "notifications.timeout": 0,
+  "notifications.clearDelay": 0,
+  "notifications.autoDismiss": false,
+  "bar.network.showWifiInfo": true,
+  "theme.bar.buttons.network.enableBorder": false,
+  "theme.bar.buttons.bluetooth.enableBorder": false,
+  "theme.bar.buttons.battery.enableBorder": false,
+  "bar.clock.format": "%I:%M %p %Z, %a %b %d",
+  "menus.dashboard.directories.right.directory3.label": "󱂵 home",
+  "menus.dashboard.directories.right.directory2.label": "󰉏 pictures",
+  "menus.dashboard.directories.right.directory1.label": "󱧶 documents",
+  "menus.dashboard.directories.left.directory3.label": "󰚝 projects",
+  "menus.dashboard.directories.left.directory2.label": "󰉏 videos",
+  "menus.dashboard.directories.left.directory1.label": "󰉍 downloads",
+  "menus.dashboard.shortcuts.enabled": false,
+  "menus.dashboard.directories.enabled": false,
+  "bar.customModules.ram.label": true,
+  "bar.customModules.ram.labelType": "percentage",
+  "menus.dashboard.powermenu.avatar.image": "/home/jfs/pictures/20260225_182153.png",
+  "menus.dashboard.powermenu.avatar.name": "jfs",
+  "menus.dashboard": {
+    "icon": "",
+    "color": "red"
+  }
+}
