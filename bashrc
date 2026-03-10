@@ -4,7 +4,6 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
 alias ls='ls --color=auto'
 alias la='ls -lA'
 alias ll='ls -l'
@@ -21,16 +20,13 @@ alias grep=rg
 alias pm="sudo pacman"
 alias ssh="kitty +kitten ssh"
 alias jl=jupyter-lab
+alias conda_load=". ~/software/miniconda3/etc/profile.d/conda.sh"
 
 # ssh addresses
 alias eos="ssh jfspecht@remote.eos.ncsu.edu"
 
-# launch yazi on startup
-#yazi
-
-# activate python base venv in new terminals
+# python venvs
 VENV_DIR=~/projects/rebuild-computer/python-venvs
-#. $VENV_DIR/base/base/bin/activate
 
 swapvenv () {
     local RETURN_DIR=$PWD
@@ -53,7 +49,7 @@ Please enter a venv that already exists.
         return 1
     fi
 
-    . $VENV/$VENV/bin/activate
+ . $VENV/$VENV/bin/activate
 
     cd $RETURN_DIR
 }
@@ -61,6 +57,6 @@ Please enter a venv that already exists.
 # OPENMC XS
 OPENMC_CROSS_SECTIONS=/home/jfs/.local/share/cross_sections//endfb-viii.1-hfd5/cross_section.xml
 
-#cd /home/jfs/courses/ne523-computational_transport_theory/code01
-#cd /home/jfs/projects/pebble_shielding/
-#swapvenv openmc
+#cd ~/projects/pebble_shielding/openmc
+#cd ~/courses/ne523*/code02
+#. $VENV_DIR/thor/thor/bin/activate
