@@ -21,12 +21,19 @@ alias pm="sudo pacman"
 alias ssh="kitty +kitten ssh"
 alias jl=jupyter-lab
 alias conda_load=". ~/software/miniconda3/etc/profile.d/conda.sh"
+alias camera="guvcview"
 
 # ssh addresses
 alias eos="ssh jfspecht@remote.eos.ncsu.edu"
 
+lm () {
+    firefox /home/jfs/documents/textbooks/lewis.miller*
+    exit
+}
+
 # python venvs
 VENV_DIR=~/projects/rebuild-computer/python-venvs
+. $VENV_DIR/base/base/bin/activate
 
 swapvenv () {
     local RETURN_DIR=$PWD
@@ -57,6 +64,8 @@ Please enter a venv that already exists.
 # OPENMC XS
 OPENMC_CROSS_SECTIONS=/home/jfs/.local/share/cross_sections//endfb-viii.1-hfd5/cross_section.xml
 
-#cd ~/projects/pebble_shielding/openmc
-#cd ~/courses/ne523*/code02
-#. $VENV_DIR/thor/thor/bin/activate
+# MCNP 6.3.1 environment variables
+#. /home/jfs/.config/mcnp/mcnp631.bash
+
+#cd ~/projects/pebble*
+#swapvenv mcnp
