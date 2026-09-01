@@ -31,6 +31,14 @@ lm () {
     exit
 }
 
+pbs () {
+    cd ~/projects/pebble_shielding
+    . venv/modeler/bin/activate
+}
+pbv () {
+    . ~/projects/pebble_shielding/venv/modeler/bin/activate
+}
+
 # python venvs
 VENV_DIR=~/projects/rebuild-computer/python-venvs
 . $VENV_DIR/base/base/bin/activate
@@ -62,10 +70,9 @@ Please enter a venv that already exists.
 }
 
 # OPENMC XS
-OPENMC_CROSS_SECTIONS=/home/jfs/.local/share/cross_sections//endfb-viii.1-hfd5/cross_section.xml
+export OPENMC_CROSS_SECTIONS=/home/jfs/.local/share/cross_sections/endfb-viii.1-hdf5/cross_sections.xml
 
 # MCNP 6.3.1 environment variables
 #. /home/jfs/.config/mcnp/mcnp631.bash
 
-#cd ~/projects/pebble*
-#swapvenv mcnp
+export OMPI_MCA_hwthreads_as_cpus=1
